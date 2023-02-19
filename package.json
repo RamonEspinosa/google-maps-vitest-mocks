@@ -2,8 +2,12 @@
   "name": "google-maps-vitest-mocks",
   "version": "1.0.0",
   "description": "Vitest mocks for google maps",
-  "main": "src/index.js",
+  "main": "dist/index.js",
+  "type": "module",
   "scripts": {
+    "build": "tsc",
+    "lint": "eslint . --ext .ts",
+    "lint-and-fix": "eslint . --ext .ts --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,5 +25,13 @@
   "bugs": {
     "url": "https://github.com/RamonEspinosa/google-maps-vitest-mocks/issues"
   },
-  "homepage": "https://github.com/RamonEspinosa/google-maps-vitest-mocks#readme"
+  "homepage": "https://github.com/RamonEspinosa/google-maps-vitest-mocks#readme",
+  "devDependencies": {
+    "@types/node": "^18.14.0",
+    "@typescript-eslint/eslint-plugin": "^5.52.0",
+    "@typescript-eslint/parser": "^5.52.0",
+    "eslint": "^8.34.0",
+    "prettier": "2.8.4",
+    "typescript": "^4.9.5"
+  }
 }
