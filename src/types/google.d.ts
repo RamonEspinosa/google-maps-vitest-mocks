@@ -35,6 +35,7 @@ declare global {
 
       const event: any;
       class Icon {}
+      const ImageMapType: Function;
       class LatLng {
         constructor({ lat, lng });
       }
@@ -45,8 +46,10 @@ declare global {
         constructor(_mapDiv: Element, _opts?: MapOptions);
         setHeading: (heading: number) => void;
       }
-      class MapsEventListener {}
+      class MapCanvasProjection {}
       class MapOptions {}
+      class MapPanes {}
+      class MapsEventListener {}
       class MapType {}
       enum MapTypeId {
         HYBRID = "hybrid",
@@ -61,6 +64,7 @@ declare global {
       class MarkerShape {}
       class MVCArray<T> {}
       class MVCObject {}
+      class OverlayView {}
       class Padding {}
       namespace places {
         class Autocomplete {
@@ -122,7 +126,7 @@ declare global {
       }
 
       class Symbol {}
-      const ImageMapType: Function;
+      class VisibleRegion {}
     }
   }
 }

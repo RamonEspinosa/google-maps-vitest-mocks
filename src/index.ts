@@ -12,6 +12,7 @@ import { Size } from "@lib/maps/coordinates/size.js";
 import { MapTypeId } from "@lib/maps/maps/constants.js";
 import { LatLng, LatLngBounds } from "@lib/maps/coordinates/latlng.js";
 import { event } from "@lib/maps/event/event.js";
+import { OverlayView } from "@lib/drawing/DOM/overlayview.js";
 import { StreetViewPanorama } from "@lib/streetview/rendering/panorama.js";
 import { StreetViewService } from "@lib/streetview/service/service.js";
 import { StreetViewCoverageLayer } from "@lib/streetview/rendering/coverage.js";
@@ -61,6 +62,7 @@ export const initialize = () => {
       Polygon,
       Polyline,
       Rectangle,
+      OverlayView,
     },
   };
 };
