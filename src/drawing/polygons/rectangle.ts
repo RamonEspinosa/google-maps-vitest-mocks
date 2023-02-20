@@ -1,5 +1,5 @@
-import { MVCObject } from "@lib/maps/event/MVCObject.js";
-import { Map } from "@lib/maps/maps/map.js";
+import { MVCObject } from "../../maps/event/MVCObject.js";
+import { Map } from "../../maps/maps/map.js";
 import { vi } from "vitest";
 
 export class Rectangle extends MVCObject implements google.maps.Rectangle {

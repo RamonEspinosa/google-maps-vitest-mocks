@@ -1,4 +1,4 @@
-import { initialize, event } from "@lib/index.js";
+import { initialize, event } from "../../index.js";
 import { test, expect } from "vitest";
 
 test("event system", () => {

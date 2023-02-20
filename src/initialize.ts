@@ -1,4 +1,4 @@
-import { maps } from "@lib/maps.js";
+import { maps } from "./maps.js";
 
 export const initialize = () => {
   global.google = {

@@ -1,4 +1,9 @@
-import { initialize, ControlPosition, Map, mockInstances } from "@lib/index.js";
+import {
+  initialize,
+  ControlPosition,
+  Map,
+  mockInstances,
+} from "../../index.js";
 import { test, expect, beforeEach } from "vitest";
 
 beforeEach(() => {

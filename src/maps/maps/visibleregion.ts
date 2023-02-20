@@ -1,4 +1,4 @@
-import { MVCObject } from "@lib/maps/event/MVCObject.js";
+import { MVCObject } from "../event/MVCObject.js";
 
 export class VisibleRegion
   extends MVCObject

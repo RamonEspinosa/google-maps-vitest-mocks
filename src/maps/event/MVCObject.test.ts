@@ -1,4 +1,4 @@
-import { initialize, MVCObject, Map } from "@lib/index.js";
+import { initialize, MVCObject, Map } from "../../index.js";
 import { test, expect } from "vitest";
 
 test("instances are stored", () => {

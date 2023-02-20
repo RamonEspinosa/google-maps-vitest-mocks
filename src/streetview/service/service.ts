@@ -1,6 +1,6 @@
-import { LatLng } from "@lib/maps/coordinates/latlng.js";
-import { Size } from "@lib/maps/coordinates/size.js";
-import { __registerMockInstance } from "@lib/registry.js";
+import { LatLng } from "../../maps/coordinates/latlng.js";
+import { Size } from "../../maps/coordinates/size.js";
+import { __registerMockInstance } from "../../registry.js";
 import { vi } from "vitest";
 
 export class StreetViewService implements google.maps.StreetViewService {

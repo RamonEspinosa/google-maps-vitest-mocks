@@ -1,6 +1,6 @@
-import { __registerMockInstance } from "@lib/registry.js";
+import { __registerMockInstance } from "../../registry.js";
 import { afterEach, vi } from "vitest";
-import { MapsEventListener } from "@lib/maps/event/event.js";
+import { MapsEventListener } from "../../maps/event/event.js";
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 

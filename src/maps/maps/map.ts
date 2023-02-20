@@ -1,6 +1,6 @@
 import { vi } from "vitest";
-import { LatLng, LatLngBounds } from "@lib/maps/coordinates/latlng.js";
-import { MVCObject } from "@lib/maps/event/MVCObject.js";
+import { LatLng, LatLngBounds } from "../coordinates/latlng.js";
+import { MVCObject } from "../event/MVCObject.js";
 
 export class Map extends MVCObject implements google.maps.Map {
   public controls: Array<google.maps.MVCArray<Node>>;

@@ -1,7 +1,7 @@
-import { LatLng } from "@lib/maps/coordinates/latlng.js";
-import { Point } from "@lib/maps/coordinates/point.js";
-import { MVCObject } from "@lib/maps/event/MVCObject.js";
-import { VisibleRegion } from "@lib/maps/maps/visibleregion.js";
+import { LatLng } from "../../maps/coordinates/latlng.js";
+import { Point } from "../../maps/coordinates/point.js";
+import { MVCObject } from "../../maps/event/MVCObject.js";
+import { VisibleRegion } from "../../maps/maps/visibleregion.js";
 import { vi } from "vitest";
 
 export class MapCanvasProjection

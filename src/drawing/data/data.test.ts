@@ -1,4 +1,4 @@
-import { initialize } from "@lib/index.js";
+import { initialize } from "../../index.js";
 import { expect, test } from "vitest";
 
 test("data object is mocked", () => {

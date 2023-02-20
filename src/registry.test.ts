@@ -5,8 +5,8 @@ import {
   Marker,
   mockInstances,
   MOCKS_REGISTRY,
-} from "@lib/index.js";
-import { MVCObject } from "./maps/event/MVCObject.js";
+  MVCObject,
+} from "./index.js";
 
 beforeEach(() => {
   initialize();

@@ -1,6 +1,6 @@
-import { LatLngBounds } from "@lib/maps/coordinates/latlng.js";
-import { MapsEventListener } from "@lib/maps/event/event.js";
-import { MVCObject } from "@lib/maps/event/MVCObject.js";
+import { LatLngBounds } from "../../maps/coordinates/latlng.js";
+import { MapsEventListener } from "../../maps/event/event.js";
+import { MVCObject } from "../../maps/event/MVCObject.js";
 import { vi } from "vitest";
 
 export class KmlLayer extends MVCObject implements google.maps.KmlLayer {

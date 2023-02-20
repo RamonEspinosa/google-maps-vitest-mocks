@@ -1,4 +1,4 @@
-import { initialize, InfoWindow } from "@lib/index.js";
+import { initialize, InfoWindow } from "../../index.js";
 import { test, expect } from "vitest";
 
 test("can initialize", () => {

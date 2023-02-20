@@ -1,6 +1,6 @@
-import { ControlPosition } from "@lib/maps/controls/ControlPosition.js";
-import { MVCObject } from "@lib/maps/event/MVCObject.js";
-import { Feature } from "@lib/drawing/data/data.feature.js";
+import { ControlPosition } from "../../maps/controls/ControlPosition.js";
+import { MVCObject } from "../../maps/event/MVCObject.js";
+import { Feature } from "../../drawing/data/data.feature.js";
 import { vi } from "vitest";
 
 export class Data extends MVCObject implements google.maps.Data {

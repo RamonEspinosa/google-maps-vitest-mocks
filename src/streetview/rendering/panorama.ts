@@ -1,6 +1,6 @@
-import { MVCArray } from "@lib/maps/event/MVCArray.js";
-import { MVCObject } from "@lib/maps/event/MVCObject.js";
-import { LatLng } from "@lib/maps/coordinates/latlng.js";
+import { MVCArray } from "../../maps/event/MVCArray.js";
+import { MVCObject } from "../../maps/event/MVCObject.js";
+import { LatLng } from "../../maps/coordinates/latlng.js";
 import { vi } from "vitest";
 
 export class StreetViewPanorama

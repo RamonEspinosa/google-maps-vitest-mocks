@@ -1,4 +1,4 @@
-import { initialize, StreetViewService, mockInstances } from "@lib/index.js";
+import { initialize, StreetViewService, mockInstances } from "../../index.js";
 import { test, expect, beforeEach } from "vitest";
 
 beforeEach(() => {

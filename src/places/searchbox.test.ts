@@ -1,4 +1,4 @@
-import { initialize } from "@lib/index.js";
+import { initialize } from "../index.js";
 import { test, expect } from "vitest";
 
 test("searchbox constructor is mocked", () => {

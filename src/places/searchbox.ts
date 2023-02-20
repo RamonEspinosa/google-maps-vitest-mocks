@@ -1,4 +1,4 @@
-import { MVCObject } from "@lib/maps/event/MVCObject.js";
+import { MVCObject } from "../maps/event/MVCObject.js";
 import { vi } from "vitest";
 
 export class SearchBox

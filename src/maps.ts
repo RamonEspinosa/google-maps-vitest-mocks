@@ -1,37 +1,37 @@
-import { Autocomplete } from "@lib/places/autocomplete.js";
-import { SearchBox } from "@lib/places/searchbox.js";
-import { Circle } from "@lib/drawing/polygons/circle.js";
-import { Map } from "@lib/maps/maps/map.js";
-import { Data } from "@lib/drawing/data/data.js";
-import { KmlLayer } from "@lib/drawing/kml/kmllayer.js";
-import { MVCObject } from "@lib/maps/event/MVCObject.js";
-import { MVCArray } from "@lib/maps/event/MVCArray.js";
-import { Marker } from "@lib/drawing/data/marker/marker.js";
-import { ControlPosition } from "@lib/maps/controls/ControlPosition.js";
-import { Point } from "@lib/maps/coordinates/point.js";
-import { Size } from "@lib/maps/coordinates/size.js";
-import { MapTypeId } from "@lib/maps/maps/constants.js";
-import { LatLng, LatLngBounds } from "@lib/maps/coordinates/latlng.js";
-import { event } from "@lib/maps/event/event.js";
-import { OverlayView } from "@lib/drawing/DOM/overlayview.js";
-import { StreetViewPanorama } from "@lib/streetview/rendering/panorama.js";
-import { StreetViewService } from "@lib/streetview/service/service.js";
-import { StreetViewCoverageLayer } from "@lib/streetview/rendering/coverage.js";
+import { Autocomplete } from "./places/autocomplete.js";
+import { SearchBox } from "./places/searchbox.js";
+import { Circle } from "./drawing/polygons/circle.js";
+import { Map } from "./maps/maps/map.js";
+import { Data } from "./drawing/data/data.js";
+import { KmlLayer } from "./drawing/kml/kmllayer.js";
+import { MVCObject } from "./maps/event/MVCObject.js";
+import { MVCArray } from "./maps/event/MVCArray.js";
+import { Marker } from "./drawing/data/marker/marker.js";
+import { ControlPosition } from "./maps/controls/ControlPosition.js";
+import { Point } from "./maps/coordinates/point.js";
+import { Size } from "./maps/coordinates/size.js";
+import { MapTypeId } from "./maps/maps/constants.js";
+import { LatLng, LatLngBounds } from "./maps/coordinates/latlng.js";
+import { event } from "./maps/event/event.js";
+import { OverlayView } from "./drawing/DOM/overlayview.js";
+import { StreetViewPanorama } from "./streetview/rendering/panorama.js";
+import { StreetViewService } from "./streetview/service/service.js";
+import { StreetViewCoverageLayer } from "./streetview/rendering/coverage.js";
 import {
   StreetViewPreference,
   StreetViewSource,
   StreetViewStatus,
-} from "@lib/streetview/service/constants.js";
-import { Polyline } from "@lib/drawing/polygons/polyline.js";
-import { Polygon } from "@lib/drawing/polygons/polygon.js";
-import { Rectangle } from "@lib/drawing/polygons/rectangle.js";
-import { MapCanvasProjection } from "@lib/drawing/DOM/mapcanvasprojection.js";
-import { MapPanes } from "@lib/drawing/DOM/mappanes.js";
-import { VisibleRegion } from "@lib/maps/maps/visibleregion.js";
-import { InfoWindow } from "@lib/maps/infowindow/infowindow.js";
-import { RenderingType } from "@lib/types/RenderingType.js";
+} from "./streetview/service/constants.js";
+import { Polyline } from "./drawing/polygons/polyline.js";
+import { Polygon } from "./drawing/polygons/polygon.js";
+import { Rectangle } from "./drawing/polygons/rectangle.js";
+import { MapCanvasProjection } from "./drawing/DOM/mapcanvasprojection.js";
+import { MapPanes } from "./drawing/DOM/mappanes.js";
+import { VisibleRegion } from "./maps/maps/visibleregion.js";
+import { InfoWindow } from "./maps/infowindow/infowindow.js";
+import { RenderingType } from "./types/RenderingType.js";
 import { vi } from "vitest";
-import missing from "@lib/missing.js";
+import missing from "./missing.js";
 
 export const maps = {
   ...missing,

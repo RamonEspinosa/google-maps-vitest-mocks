@@ -6,9 +6,6 @@
     "sourceMap": true,
     "outDir": "dist",
     "baseUrl": ".",
-    "paths": {
-      "@lib/*": ["src/*"]
-    },
     "skipLibCheck": true
   },
 

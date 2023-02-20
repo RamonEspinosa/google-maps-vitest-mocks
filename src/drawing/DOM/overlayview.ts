@@ -1,7 +1,7 @@
-import { MapCanvasProjection } from "@lib/drawing/DOM/mapcanvasprojection.js";
-import { MapPanes } from "@lib/drawing/DOM/mappanes.js";
-import { Map } from "@lib/maps/maps/map.js";
-import { MVCObject } from "@lib/maps/event/MVCObject.js";
+import { MapCanvasProjection } from "../../drawing/DOM/mapcanvasprojection.js";
+import { MapPanes } from "../../drawing/DOM/mappanes.js";
+import { Map } from "../../maps/maps/map.js";
+import { MVCObject } from "../../maps/event/MVCObject.js";
 import { vi } from "vitest";
 
 export class OverlayView extends MVCObject implements google.maps.OverlayView {

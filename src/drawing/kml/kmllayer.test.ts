@@ -1,4 +1,4 @@
-import { KmlLayer, initialize } from "@lib/index.js";
+import { KmlLayer, initialize } from "../../index.js";
 import { test, expect } from "vitest";
 
 test("can initialize", () => {

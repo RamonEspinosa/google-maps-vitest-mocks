@@ -38,13 +38,9 @@
     "typescript": "^4.9.5"
   },
   "dependencies": {
-    "module-alias": "^2.2.2",
     "vitest": "^0.28.5"
   },
   "files": [
     "dist"
-  ],
-  "_moduleAliases": {
-    "@lib": "dist"
-  }
+  ]
 }

@@ -1,4 +1,4 @@
-import { initialize } from "@lib/index.js";
+import { initialize } from "./index.js";
 import { describe, expect, it } from "vitest";
 
 describe("Initialize function", () => {
