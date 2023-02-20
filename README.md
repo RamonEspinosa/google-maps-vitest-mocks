@@ -18,7 +18,7 @@ $ yarn add -D  google-maps-vitest-mocks
 
 ### Usage
 
-This package is meant to be used the same way as [@googlemaps/js-jest-mocks](https://github.com/googlemaps/js-jest-mocks).
+This package has been designed to be used as [@googlemaps/js-jest-mocks](https://github.com/googlemaps/js-jest-mocks).
 
 #### Inspecting mocks
 
@@ -82,6 +82,21 @@ beforeEach(() => {
 // Clear specific mocks
 beforeEach(() => {
   mockInstances.clear(Map, Marker);
+});
+```
+
+#### Extending mocks
+
+You can add new mocks or extend the default mock instances to match your needs.
+
+```js
+import { initialize, mocks, Map } from "google-maps-vitest-mocks";
+
+beforeEach(() => {
+  const MyCustomMapMock = vi.fn(() => ({
+    getZoom: vi.fn(() => 10),
+  }));
+  initialize({ ...mocks, Circle: MyCustomMapMock });
 });
 ```
 

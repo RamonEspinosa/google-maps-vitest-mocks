@@ -34,7 +34,7 @@ import { AutocompleteService } from "./places/autocompleteservice.js";
 import missing from "./missing.js";
 import { vi } from "vitest";
 
-export const maps = {
+export const mocks = {
   ...missing,
   ControlPosition,
   Data,

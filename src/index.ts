@@ -1,5 +1,6 @@
 export * from "./initialize.js";
 export * from "./registry.js";
+export * from "./mocks.js";
 
 export * from "./places/autocomplete.js";
 export * from "./places/searchbox.js";
