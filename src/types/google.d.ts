@@ -19,6 +19,7 @@ declare global {
       }
 
       const event: any;
+      class Icon {}
       class LatLng {
         constructor({ lat, lng });
       }
@@ -36,6 +37,10 @@ declare global {
         ROADMAP = "ROADMAP",
       }
       class MapTypeRegistry {}
+      class Marker {}
+      class MarkerLabel {}
+      class MarkerOptions {}
+      class MarkerShape {}
       class MVCArray<T> {}
       class MVCObject {}
       class Padding {}
@@ -46,6 +51,7 @@ declare global {
       }
       class Size {}
       class StreetViewPanorama {}
+      class Symbol {}
     }
   }
 }

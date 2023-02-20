@@ -1,6 +1,6 @@
 import { beforeEach, expect, test } from "vitest";
-import { initialize, Map } from "@lib/index.js";
-import { mockInstances, MOCKS_REGISTRY } from "@lib/registry.js";
+import { mockInstances, MOCKS_REGISTRY } from "./registry";
+import { initialize, Map, Marker } from "./index";
 import { MVCObject } from "./maps/event/MVCObject.js";
 
 beforeEach(() => {
@@ -21,7 +21,7 @@ test("mocks registry", () => {
   expect(MOCKS_REGISTRY.size).toBe(0);
 });
 
-test.skip("Readme example 1", () => {
+test("Readme example 1", () => {
   const map = new global.google.maps.Map(null);
   const markerOne = new global.google.maps.Marker();
   const markerTwo = new global.google.maps.Marker();
