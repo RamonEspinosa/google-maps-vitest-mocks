@@ -36,6 +36,10 @@ declare global {
       const event: any;
       class Icon {}
       const ImageMapType: Function;
+      class KmlLayer {}
+      class KmlLayerMetadata {}
+      class KmlLayerOptions {}
+      class KmlLayerStatus {}
       class LatLng {
         constructor({ lat, lng });
       }

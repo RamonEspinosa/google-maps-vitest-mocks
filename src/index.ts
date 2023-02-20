@@ -3,6 +3,7 @@ import { SearchBox } from "@lib/places/searchbox.js";
 import { Circle } from "@lib/drawing/polygons/circle.js";
 import { Map } from "@lib/maps/maps/map.js";
 import { Data } from "@lib/drawing/data/data.js";
+import { KmlLayer } from "@lib/drawing/kml/kmllayer.js";
 import { MVCObject } from "@lib/maps/event/MVCObject.js";
 import { MVCArray } from "@lib/maps/event/MVCArray.js";
 import { Marker } from "@lib/drawing/data/marker/marker.js";
@@ -24,6 +25,9 @@ import {
 import { Polyline } from "@lib/drawing/polygons/polyline.js";
 import { Polygon } from "@lib/drawing/polygons/polygon.js";
 import { Rectangle } from "@lib/drawing/polygons/rectangle.js";
+import { MapCanvasProjection } from "@lib/drawing/DOM/mapcanvasprojection.js";
+import { MapPanes } from "@lib/drawing/DOM/mappanes.js";
+import { VisibleRegion } from "@lib/maps/maps/visibleregion.js";
 import { vi } from "vitest";
 
 class MissingClass {}
@@ -63,6 +67,10 @@ export const initialize = () => {
       Polyline,
       Rectangle,
       OverlayView,
+      KmlLayer,
+      MapCanvasProjection,
+      MapPanes,
+      VisibleRegion,
     },
   };
 };
