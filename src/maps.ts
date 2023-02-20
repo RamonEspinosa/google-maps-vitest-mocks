@@ -30,8 +30,9 @@ import { MapPanes } from "./drawing/DOM/mappanes.js";
 import { VisibleRegion } from "./maps/maps/visibleregion.js";
 import { InfoWindow } from "./maps/infowindow/infowindow.js";
 import { RenderingType } from "./types/RenderingType.js";
-import { vi } from "vitest";
+import { AutocompleteService } from "./places/autocompleteservice.js";
 import missing from "./missing.js";
+import { vi } from "vitest";
 
 export const maps = {
   ...missing,
@@ -57,6 +58,7 @@ export const maps = {
   places: {
     Autocomplete,
     SearchBox,
+    AutocompleteService,
     ...missing.places,
   },
   Circle,

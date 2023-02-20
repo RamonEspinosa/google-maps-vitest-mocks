@@ -257,6 +257,13 @@ declare global {
           );
         }
         class AutocompleteOptions {}
+        class AutocompleteService {
+          getPlacePredictions;
+          getQueryPredictions;
+        }
+        enum PlacesServiceStatus {
+          OK = "OK",
+        }
         class ComponentRestrictions {}
         class PlaceResult {}
         class SearchBox {
