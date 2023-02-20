@@ -28,14 +28,15 @@ import { Rectangle } from "@lib/drawing/polygons/rectangle.js";
 import { MapCanvasProjection } from "@lib/drawing/DOM/mapcanvasprojection.js";
 import { MapPanes } from "@lib/drawing/DOM/mappanes.js";
 import { VisibleRegion } from "@lib/maps/maps/visibleregion.js";
+import { InfoWindow } from "@lib/maps/infowindow/infowindow.js";
+import { RenderingType } from "@lib/types/RenderingType.js";
 import { vi } from "vitest";
-
-class MissingClass {}
+import missing from "@lib/missing.js";
 
 export const initialize = () => {
   global.google = {
     maps: {
-      CameraOptions: MissingClass,
+      ...missing,
       ControlPosition,
       Data,
       event,
@@ -58,9 +59,7 @@ export const initialize = () => {
       places: {
         Autocomplete,
         SearchBox,
-        AutocompleteOptions: MissingClass,
-        ComponentRestrictions: MissingClass,
-        PlaceResult: MissingClass,
+        ...missing.places,
       },
       Circle,
       Polygon,
@@ -70,7 +69,9 @@ export const initialize = () => {
       KmlLayer,
       MapCanvasProjection,
       MapPanes,
+      RenderingType,
       VisibleRegion,
+      InfoWindow,
     },
   };
 };

@@ -35,6 +35,9 @@ declare global {
 
       const event: any;
       class Icon {}
+      class InfoWindow {}
+      class InfoWindowOpenOptions {}
+      class InfoWindowOptions {}
       const ImageMapType: Function;
       class KmlLayer {}
       class KmlLayerMetadata {}
@@ -95,6 +98,8 @@ declare global {
       class RectangleOptions {}
       enum RenderingType {
         RASTER = "RASTER",
+        UNINITIALIZED = "UNINITIALIZED",
+        VECTOR = "VECTOR",
       }
       class Size {
         constructor(
