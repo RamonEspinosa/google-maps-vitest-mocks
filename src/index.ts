@@ -1,3 +1,4 @@
+import "module-alias/register";
 export * from "@lib/initialize.js";
 export * from "@lib/registry.js";
 
