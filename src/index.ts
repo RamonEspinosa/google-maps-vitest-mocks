@@ -3,6 +3,7 @@ import { SearchBox } from "@lib/places/searchbox.js";
 import { Circle } from "@lib/drawing/polygons/circle.js";
 import { Map } from "@lib/maps/maps/map.js";
 import { Data } from "@lib/drawing/data/data.js";
+import { Feature } from "@lib/drawing/data/data.feature.js";
 import { KmlLayer } from "@lib/drawing/kml/kmllayer.js";
 import { MVCObject } from "@lib/maps/event/MVCObject.js";
 import { MVCArray } from "@lib/maps/event/MVCArray.js";
@@ -32,6 +33,7 @@ import { InfoWindow } from "@lib/maps/infowindow/infowindow.js";
 import { RenderingType } from "@lib/types/RenderingType.js";
 import { vi } from "vitest";
 import missing from "@lib/missing.js";
+import { mockInstances } from "@lib/registry.js";
 
 export const initialize = () => {
   global.google = {
@@ -75,4 +77,32 @@ export const initialize = () => {
     },
   };
 };
-export { Data, Map, Marker, MVCObject, MVCArray };
+export {
+  Autocomplete,
+  Circle,
+  Data,
+  event,
+  Feature,
+  LatLng,
+  LatLngBounds,
+  MVCArray,
+  MVCObject,
+  MapCanvasProjection,
+  MapPanes,
+  Map,
+  Marker,
+  OverlayView,
+  KmlLayer,
+  Point,
+  Polygon,
+  Polyline,
+  Rectangle,
+  SearchBox,
+  Size,
+  StreetViewCoverageLayer,
+  StreetViewPanorama,
+  StreetViewService,
+  VisibleRegion,
+  InfoWindow,
+  mockInstances,
+};
