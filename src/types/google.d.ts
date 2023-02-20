@@ -60,6 +60,18 @@ declare global {
       class MVCArray<T> {}
       class MVCObject {}
       class Padding {}
+      namespace places {
+        class Autocomplete {
+          constructor(
+            _inputField: HTMLInputElement,
+            _opts?: google.maps.places.AutocompleteOptions
+          );
+        }
+        class AutocompleteOptions {}
+        class ComponentRestrictions {}
+        class PlaceResult {}
+        class SearchBox {}
+      }
       class PanoProviderOptions {}
       class Projection {}
       class Point {

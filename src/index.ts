@@ -1,3 +1,5 @@
+import { Autocomplete } from "@lib/places/autocomplete.js";
+import { SearchBox } from "@lib/places/searchbox.js";
 import { Map } from "@lib/maps/maps/map.js";
 import { Data } from "@lib/drawing/data/data.js";
 import { MVCObject } from "@lib/maps/event/MVCObject.js";
@@ -44,6 +46,13 @@ export const initialize = () => {
       StreetViewService,
       StreetViewSource,
       StreetViewStatus,
+      places: {
+        Autocomplete,
+        SearchBox,
+        AutocompleteOptions: MissingClass,
+        ComponentRestrictions: MissingClass,
+        PlaceResult: MissingClass,
+      },
     },
   };
 };
