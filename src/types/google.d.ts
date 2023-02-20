@@ -25,7 +25,9 @@ declare global {
       class Data {}
       namespace Data {
         class DataOptions {}
-        class Feature {}
+        class Feature {
+          constructor(_options?: google.maps.Data.FeatureOptions | null);
+        }
         class FeatureOptions {}
         class GeoJsonOptions {}
         class Geometry {}
