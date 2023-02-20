@@ -60,6 +60,7 @@ declare global {
       class MVCArray<T> {}
       class MVCObject {}
       class Padding {}
+      class PanoProviderOptions {}
       class Projection {}
       class Point {
         constructor(x: number, y: number);
@@ -75,7 +76,31 @@ declare global {
           _heightUnit?: string
         );
       }
+      class StreetViewCoverageLayer {}
+      class StreetViewLink {}
+      class StreetViewLocation {}
+      class StreetViewLocationRequest {}
       class StreetViewPanorama {}
+      class StreetViewPanoramaOptions {}
+      class StreetViewPanoramaData {}
+      class StreetViewPanoRequest {}
+      class StreetViewPov {}
+      class StreetViewResponse {}
+      class StreetViewService {}
+      enum StreetViewPreference {
+        BEST = "best",
+        NEAREST = "nearest",
+      }
+      enum StreetViewSource {
+        DEFAULT = "default",
+        OUTDOOR = "outdoor",
+      }
+      enum StreetViewStatus {
+        OK = "OK",
+        UNKNOWN_ERROR = "UNKNOWN_ERROR",
+        ZERO_RESULTS = "ZERO_RESULTS",
+      }
+
       class Symbol {}
       const ImageMapType: Function;
     }

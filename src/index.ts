@@ -9,6 +9,14 @@ import { Size } from "@lib/maps/coordinates/size.js";
 import { MapTypeId } from "@lib/maps/maps/constants.js";
 import { LatLng, LatLngBounds } from "@lib/maps/coordinates/latlng.js";
 import { event } from "@lib/maps/event/event.js";
+import { StreetViewPanorama } from "@lib/streetview/rendering/panorama.js";
+import { StreetViewService } from "@lib/streetview/service/service.js";
+import { StreetViewCoverageLayer } from "@lib/streetview/rendering/coverage.js";
+import {
+  StreetViewPreference,
+  StreetViewSource,
+  StreetViewStatus,
+} from "@lib/streetview/service/constants.js";
 import { vi } from "vitest";
 
 class MissingClass {}
@@ -30,6 +38,12 @@ export const initialize = () => {
       Marker,
       Point,
       Size,
+      StreetViewCoverageLayer,
+      StreetViewPanorama,
+      StreetViewPreference,
+      StreetViewService,
+      StreetViewSource,
+      StreetViewStatus,
     },
   };
 };
