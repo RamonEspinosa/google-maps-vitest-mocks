@@ -5,7 +5,9 @@ declare global {
   namespace google {
     namespace maps {
       class CameraOptions {}
-      class Circle {}
+      class Circle {
+        constructor(_opt?: google.maps.CircleOptions);
+      }
       class CircleOptions {}
       enum ControlPosition {
         BOTTOM_CENTER = 0.0,
@@ -22,7 +24,9 @@ declare global {
         TOP_RIGHT = 11.0,
       }
 
-      class Data {}
+      class Data {
+        constructor(_opt?: google.maps.Data.DataOptions | null);
+      }
       namespace Data {
         class DataOptions {}
         class Feature {
@@ -35,7 +39,7 @@ declare global {
         class StylingFunction {}
       }
 
-      const event: any;
+      const event;
       class Icon {}
       class InfoWindow {}
       class InfoWindowOpenOptions {}
@@ -54,6 +58,10 @@ declare global {
       class Map {
         constructor(_mapDiv: Element, _opts?: MapOptions);
         setHeading: (heading: number) => void;
+        public controls: Array<google.maps.MVCArray<Node>>;
+        public data: google.maps.Data;
+        public mapTypes: google.maps.MapTypeRegistry;
+        public overlayMapTypes: google.maps.MVCArray<google.maps.MapType>;
       }
       class MapCanvasProjection {}
       class MapOptions {}
@@ -92,11 +100,39 @@ declare global {
       class Point {
         constructor(x: number, y: number);
       }
-      class Polygon {}
+      class Polygon {
+        constructor(_opts?: google.maps.PolygonOptions | null);
+        getDraggable;
+        getEditable;
+        getMap;
+        getPath;
+        getPaths;
+        getVisible;
+        setDraggable;
+        setEditable;
+        setMap;
+        setOptions;
+        setPath;
+        setPaths;
+        setVisible;
+      }
       class PolygonOptions {}
       class Polyline {}
       class PolylineOptions {}
-      class Rectangle {}
+      class Rectangle {
+        constructor(_opt?: google.maps.RectangleOptions);
+        getBounds;
+        getDraggable;
+        getEditable;
+        getMap;
+        getVisible;
+        setBounds;
+        setDraggable;
+        setEditable;
+        setMap;
+        setOptions;
+        setVisible;
+      }
       class RectangleOptions {}
       enum RenderingType {
         RASTER = "RASTER",
