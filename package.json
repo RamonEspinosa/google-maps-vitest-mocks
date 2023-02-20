@@ -1,6 +1,6 @@
 {
   "name": "google-maps-vitest-mocks",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vitest mocks for google maps",
   "main": "dist/index.js",
   "type": "module",
