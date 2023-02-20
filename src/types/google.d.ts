@@ -26,6 +26,7 @@ declare global {
 
       class Data {
         constructor(_opt?: google.maps.Data.DataOptions | null);
+        get;
       }
       namespace Data {
         class DataOptions {}
@@ -57,11 +58,34 @@ declare global {
       class LatLngLiteral {}
       class Map {
         constructor(_mapDiv: Element, _opts?: MapOptions);
-        setHeading: (heading: number) => void;
         public controls: Array<google.maps.MVCArray<Node>>;
         public data: google.maps.Data;
         public mapTypes: google.maps.MapTypeRegistry;
         public overlayMapTypes: google.maps.MVCArray<google.maps.MapType>;
+        fitBounds;
+        getBounds;
+        getCenter;
+        getClickableIcons;
+        getDiv;
+        getHeading;
+        getMapTypeId;
+        getProjection;
+        getRenderingType;
+        getStreetView;
+        getTilt;
+        getZoom;
+        moveCamera;
+        panBy;
+        panTo;
+        panToBounds;
+        setCenter;
+        setHeading;
+        setMapTypeId;
+        setOptions;
+        setStreetView;
+        setTilt;
+        setZoom;
+        setClickableIcons;
       }
       class MapCanvasProjection {}
       class MapOptions {}
@@ -75,7 +99,37 @@ declare global {
         TERRAIN = "terrain",
       }
       class MapTypeRegistry {}
-      class Marker {}
+      class Marker {
+        static readonly MAX_ZINDEX;
+        getAnimation;
+        getClickable;
+        getCursor;
+        getDraggable;
+        getIcon;
+        getLabel;
+        getMap;
+        getOpacity;
+        getPosition;
+        getShape;
+        getTitle;
+        getVisible;
+        getZIndex;
+        setAnimation;
+        setClickable;
+        setCursor;
+        setDraggable;
+        setIcon;
+        setLabel;
+        setMap;
+        setOpacity;
+        setOptions;
+        setPosition;
+        setShape;
+        setTitle;
+        setVisible;
+        setZIndex;
+        addListener;
+      }
       class MarkerLabel {}
       class MarkerOptions {}
       class MarkerShape {}
@@ -93,7 +147,13 @@ declare global {
         class AutocompleteOptions {}
         class ComponentRestrictions {}
         class PlaceResult {}
-        class SearchBox {}
+        class SearchBox {
+          constructor(
+            _inputField: HTMLInputElement,
+            _opts?: google.maps.places.SearchBoxOptions | null
+          );
+        }
+        class SearchBoxOptions {}
       }
       class PanoProviderOptions {}
       class Projection {}
@@ -151,13 +211,20 @@ declare global {
       class StreetViewLink {}
       class StreetViewLocation {}
       class StreetViewLocationRequest {}
-      class StreetViewPanorama {}
+      class StreetViewPanorama {
+        constructor(
+          _container: HTMLElement,
+          _opts?: google.maps.StreetViewPanoramaOptions | null
+        );
+      }
       class StreetViewPanoramaOptions {}
       class StreetViewPanoramaData {}
       class StreetViewPanoRequest {}
       class StreetViewPov {}
       class StreetViewResponse {}
-      class StreetViewService {}
+      class StreetViewService {
+        getPanorama;
+      }
       enum StreetViewPreference {
         BEST = "best",
         NEAREST = "nearest",

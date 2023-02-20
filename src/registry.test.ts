@@ -1,6 +1,11 @@
 import { beforeEach, expect, test } from "vitest";
-import { mockInstances, MOCKS_REGISTRY } from "./registry";
-import { initialize, Map, Marker } from "./index";
+import {
+  initialize,
+  Map,
+  Marker,
+  mockInstances,
+  MOCKS_REGISTRY,
+} from "@lib/index.js";
 import { MVCObject } from "./maps/event/MVCObject.js";
 
 beforeEach(() => {
