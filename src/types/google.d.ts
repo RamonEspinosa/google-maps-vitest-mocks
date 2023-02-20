@@ -47,7 +47,10 @@ declare global {
       class MapOptions {}
       class MapType {}
       enum MapTypeId {
-        ROADMAP = "ROADMAP",
+        HYBRID = "hybrid",
+        ROADMAP = "roadmap",
+        SATELLITE = "satellite",
+        TERRAIN = "terrain",
       }
       class MapTypeRegistry {}
       class Marker {}
@@ -58,13 +61,23 @@ declare global {
       class MVCObject {}
       class Padding {}
       class Projection {}
-      class Point {}
+      class Point {
+        constructor(x: number, y: number);
+      }
       enum RenderingType {
         RASTER = "RASTER",
       }
-      class Size {}
+      class Size {
+        constructor(
+          width: number,
+          height: number,
+          _widthUnit?: string,
+          _heightUnit?: string
+        );
+      }
       class StreetViewPanorama {}
       class Symbol {}
+      const ImageMapType: Function;
     }
   }
 }
