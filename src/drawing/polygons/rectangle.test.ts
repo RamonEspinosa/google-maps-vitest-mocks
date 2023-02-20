@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { initialize, Map } from "@lib/index.js";
 import { test, expect, beforeEach } from "vitest";
 

@@ -1,7 +1,7 @@
 class MissingClass {}
 /** Object of missing classes.
  * These classes were not found in the original repo.
- * They'll have to be manually added/copied over
+ * They'll have to be manually added or copied over once available
  */
 const missing = {
   CameraOptions: MissingClass,

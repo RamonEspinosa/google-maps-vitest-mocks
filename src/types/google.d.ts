@@ -7,8 +7,37 @@ declare global {
       class CameraOptions {}
       class Circle {
         constructor(_opt?: google.maps.CircleOptions);
+        getBounds;
+        getCenter;
+        getDraggable;
+        getEditable;
+        getMap;
+        getRadius;
+        getVisible;
+        setCenter;
+        setDraggable;
+        setEditable;
+        setMap;
+        setOptions;
+        setRadius;
+        setVisible;
       }
-      class CircleOptions {}
+      class CircleOptions {
+        center;
+        clickable;
+        draggable;
+        editable;
+        fillColor;
+        fillOpacity;
+        map;
+        radius;
+        strokeColor;
+        strokeOpacity;
+        strokePosition;
+        strokeWeight;
+        visible;
+        zIndex;
+      }
       enum ControlPosition {
         BOTTOM_CENTER = 0.0,
         BOTTOM_LEFT = 1.0,
@@ -26,17 +55,80 @@ declare global {
 
       class Data {
         constructor(_opt?: google.maps.Data.DataOptions | null);
+        add;
+        addGeoJson;
+        contains;
+        forEach;
+        getControlPosition;
+        getControls;
+        getDrawingMode;
+        getFeatureById;
+        getMap;
+        getStyle;
+        loadGeoJson;
+        overrideStyle;
+        remove;
+        revertStyle;
+        setControlPosition;
+        setControls;
+        setDrawingMode;
+        setMap;
+        setStyle;
+        toGeoJson;
         get;
       }
       namespace Data {
-        class DataOptions {}
+        class DataOptions {
+          map;
+          controlPosition;
+          controls;
+          drawingMode;
+          featureFactory;
+          style;
+        }
         class Feature {
           constructor(_options?: google.maps.Data.FeatureOptions | null);
+          forEachProperty;
+          getGeometry;
+          getId;
+          getProperty;
+          removeProperty;
+          setGeometry;
+          setProperty;
+          toGeoJson;
         }
-        class FeatureOptions {}
-        class GeoJsonOptions {}
-        class Geometry {}
-        class StyleOptions {}
+        class FeatureOptions {
+          geometry;
+          id;
+          properties;
+        }
+        class GeoJsonOptions {
+          idPropertyName;
+        }
+        class Geometry {
+          forEachLatLng;
+          getType;
+        }
+        class StyleOptions {
+          animation;
+          clickable;
+          cursor;
+          draggable;
+          editable;
+          fillColor;
+          fillOpacity;
+          icon;
+          icons;
+          label;
+          opacity;
+          shape;
+          strokeColor;
+          strokeOpacity;
+          strokeWeight;
+          title;
+          visible;
+          zIndex;
+        }
         class StylingFunction {}
       }
 
@@ -52,8 +144,28 @@ declare global {
       class KmlLayerStatus {}
       class LatLng {
         constructor({ lat, lng });
+        equals;
+        lat;
+        lng;
+        toString;
+        toUrlValue;
+        toJSON;
       }
-      class LatLngBounds {}
+      class LatLngBounds {
+        contains;
+        equals;
+        extend;
+        getCenter;
+        getNorthEast;
+        getSouthWest;
+        intersects;
+        isEmpty;
+        toJSON;
+        toSpan;
+        toString;
+        toUrlValue;
+        union;
+      }
       class LatLngBoundsLiteral {}
       class LatLngLiteral {}
       class Map {

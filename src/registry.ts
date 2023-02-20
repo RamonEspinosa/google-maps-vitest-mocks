@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export const MOCKS_REGISTRY = new Map<string, any[]>();
 
 type Constructable = { new (...args: unknown[]): unknown };
