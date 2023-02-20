@@ -149,7 +149,7 @@ export class Data extends MVCObject implements google.maps.Data {
     .mockImplementation((_callback: (a: object) => void): void => {
       return null;
     });
-
+  /** @todo: Add mocks for these static classes */
   static DataOptions = class {};
   static FeatureOptions = class {};
   static GeoJsonOptions = class {};
