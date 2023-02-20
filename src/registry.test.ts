@@ -1,12 +1,13 @@
 import { beforeEach, expect, test } from "vitest";
-import { initialize } from "@lib/index.js";
+import { initialize, Map } from "@lib/index.js";
 import { mockInstances, MOCKS_REGISTRY } from "@lib/registry.js";
+import { MVCObject } from "./maps/event/MVCObject.js";
 
 beforeEach(() => {
   initialize();
 });
 
-test.skip("mocks registry", () => {
+test("mocks registry", () => {
   expect(MOCKS_REGISTRY.size).toBe(0);
   const mvc1 = new global.google.maps.MVCObject();
   const mvc2 = new global.google.maps.MVCObject();

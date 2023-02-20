@@ -27,10 +27,7 @@ export const mockInstances = {
 };
 
 /* Internal */
-export function __registerMockInstance(
-  ctr: (...args) => unknown,
-  instance: any
-): void {
+export function __registerMockInstance(ctr: Function, instance: any): void {
   const existing = MOCKS_REGISTRY.get(ctr.name) || [];
   MOCKS_REGISTRY.set(ctr.name, [...existing, instance]);
 }
