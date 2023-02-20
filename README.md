@@ -1,7 +1,5 @@
 # Google maps vitest mocks
 
-**NOTE**: This package is still under development.
-
 ⚡️ Easy to use vitest mocks for google maps.
 This is a rewrite of [@googlemaps/js-jest-mocks](https://github.com/googlemaps/js-jest-mocks), meant to be used with [vitest](https://vitest.dev) instead of jest.
 
@@ -89,7 +87,7 @@ beforeEach(() => {
 
 ## Contributing
 
-If you want to contribute to this repository and don't know how, please follow [this tutorial](https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github). Here's
+If you want to contribute to this repository and don't know how, please watch [this tutorial](https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github). Here's a list of steps to follow:
 
 1. Fork the repository and create your branch.
 1. Run `npm install` in the repository root.
@@ -106,4 +104,4 @@ If you want to contribute to this repository and don't know how, please follow [
 
 ## License
 
-MIT License
+Apache 2.0
