@@ -1,5 +1,7 @@
 # Google maps vitest mocks
 
+**NOTE**: This package is still under development.
+
 ⚡️ Easy to use vitest mocks for google maps.
 This is a rewrite of [@googlemaps/js-jest-mocks](https://github.com/googlemaps/js-jest-mocks), meant to be used with [vitest](https://vitest.dev) instead of jest.
 
@@ -18,7 +20,7 @@ $ yarn add -D  google-maps-vitest-mocks
 
 ### Usage
 
-This package is meant to be used the same way as [@googlemaps/js-jest-mocks](https://github.com/googlemaps/js-jest-mocks).g
+This package is meant to be used the same way as [@googlemaps/js-jest-mocks](https://github.com/googlemaps/js-jest-mocks).
 
 #### Inspecting mocks
 
