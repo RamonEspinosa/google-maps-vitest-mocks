@@ -39,5 +39,8 @@
   },
   "dependencies": {
     "vitest": "^0.28.5"
-  }
+  },
+  "files": [
+    "dist"
+  ]
 }
