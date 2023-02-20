@@ -5,6 +5,8 @@ declare global {
   namespace google {
     namespace maps {
       class CameraOptions {}
+      class Circle {}
+      class CircleOptions {}
       enum ControlPosition {
         BOTTOM_CENTER = 0.0,
         BOTTOM_LEFT = 1.0,
@@ -77,6 +79,12 @@ declare global {
       class Point {
         constructor(x: number, y: number);
       }
+      class Polygon {}
+      class PolygonOptions {}
+      class Polyline {}
+      class PolylineOptions {}
+      class Rectangle {}
+      class RectangleOptions {}
       enum RenderingType {
         RASTER = "RASTER",
       }

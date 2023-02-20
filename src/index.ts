@@ -1,5 +1,6 @@
 import { Autocomplete } from "@lib/places/autocomplete.js";
 import { SearchBox } from "@lib/places/searchbox.js";
+import { Circle } from "@lib/drawing/polygons/circle.js";
 import { Map } from "@lib/maps/maps/map.js";
 import { Data } from "@lib/drawing/data/data.js";
 import { MVCObject } from "@lib/maps/event/MVCObject.js";
@@ -19,6 +20,9 @@ import {
   StreetViewSource,
   StreetViewStatus,
 } from "@lib/streetview/service/constants.js";
+import { Polyline } from "@lib/drawing/polygons/polyline.js";
+import { Polygon } from "@lib/drawing/polygons/polygon.js";
+import { Rectangle } from "@lib/drawing/polygons/rectangle.js";
 import { vi } from "vitest";
 
 class MissingClass {}
@@ -53,6 +57,10 @@ export const initialize = () => {
         ComponentRestrictions: MissingClass,
         PlaceResult: MissingClass,
       },
+      Circle,
+      Polygon,
+      Polyline,
+      Rectangle,
     },
   };
 };
