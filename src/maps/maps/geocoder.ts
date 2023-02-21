@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { vi } from "vitest";
 
-export class Geocoder implements google.maps.places.Geocoder {
+export class Geocoder implements google.maps.Geocoder {
   public geocode = vi
     .fn()
     .mockImplementation(

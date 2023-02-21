@@ -133,9 +133,13 @@ declare global {
       }
 
       const event;
+      class Geocoder {
+        geocode;
+      }
       enum GeocoderStatus {
         OK = "OK",
       }
+
       class GeocoderResult {
         address_components;
         formatted_address;
@@ -269,9 +273,7 @@ declare global {
             _opts?: google.maps.places.AutocompleteOptions
           );
         }
-        class Geocoder {
-          geocode;
-        }
+
         class AutocompleteOptions {}
         class AutocompleteService {
           getPlacePredictions;

@@ -31,3 +31,5 @@ export * from "./maps/maps/visibleregion.js";
 export * from "./maps/infowindow/infowindow.js";
 export * from "./types/RenderingType.js";
 export * from "./streetview/service/constants.js";
+export * from "./places/autocompleteservice.js";
+export * from "./maps/maps/geocoder.js";
