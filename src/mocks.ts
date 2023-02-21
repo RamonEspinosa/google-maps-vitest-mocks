@@ -31,7 +31,7 @@ import { VisibleRegion } from "./maps/maps/visibleregion.js";
 import { InfoWindow } from "./maps/infowindow/infowindow.js";
 import { RenderingType } from "./types/RenderingType.js";
 import { AutocompleteService } from "./places/autocompleteservice.js";
-import { Geocoder } from "./places/geocoder.js";
+import { Geocoder } from "./maps/maps/geocoder.js";
 import missing from "./missing.js";
 import { vi } from "vitest";
 
@@ -60,7 +60,6 @@ export const mocks = {
     Autocomplete,
     SearchBox,
     AutocompleteService,
-    Geocoder,
     ...missing.places,
   },
   Circle,
@@ -74,4 +73,5 @@ export const mocks = {
   RenderingType,
   VisibleRegion,
   InfoWindow,
+  Geocoder,
 };
