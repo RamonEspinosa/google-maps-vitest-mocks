@@ -133,6 +133,19 @@ declare global {
       }
 
       const event;
+      enum GeocoderStatus {
+        OK = "OK",
+      }
+      class GeocoderResult {
+        address_components;
+        formatted_address;
+        geometry;
+        place_id;
+        types;
+        partial_match;
+        plus_code;
+        postcode_localities;
+      }
       class Icon {}
       class InfoWindow {}
       class InfoWindowOpenOptions {}
@@ -255,6 +268,9 @@ declare global {
             _inputField: HTMLInputElement,
             _opts?: google.maps.places.AutocompleteOptions
           );
+        }
+        class Geocoder {
+          geocode;
         }
         class AutocompleteOptions {}
         class AutocompleteService {
